@@ -1,9 +1,7 @@
 package ctrl;
-
 import ihm.CellContent;
 import ihm.IhmBoard;
 import wrk.Wrk;
-
 /**
  * Infrastructure de base et très simple mettant à disposition une ihm graphique
  * fonctionnelle pour implémenter des jeux.
