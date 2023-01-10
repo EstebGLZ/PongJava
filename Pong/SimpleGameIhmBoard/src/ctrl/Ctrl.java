@@ -14,7 +14,7 @@ import EMFPhidgetsBoard.Board;
 public class Ctrl {
 
     public final static int TAILLE_CELLULE_EN_PIXELS = 25;
-
+final Board board = new EMFPhidgetsBoard.Board();
     public Ctrl() {
         this.refIhm = null;
         this.refWrk = null;
