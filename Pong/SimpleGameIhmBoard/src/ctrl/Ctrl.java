@@ -14,7 +14,7 @@ import wrk.Wrk;
  */
 public class Ctrl {
 
-    public final static int TAILLE_CELLULE_EN_PIXELS = 20;
+    public final static int TAILLE_CELLULE_EN_PIXELS = 25;
 
     public Ctrl() {
         this.refIhm = null;
@@ -34,17 +34,19 @@ public class Ctrl {
         //couleur de fond
         refIhm.clearBoardContent(CellContent.BLUE);
         //ajout de couleur a une cellule
-        refIhm.setBoardContent(100, 20, CellContent.WHITE);
-        refIhm.setBoardContent(101, 20, CellContent.WHITE);
-        refIhm.setBoardContent(102, 20, CellContent.WHITE);
-        refIhm.setBoardContent(103, 20, CellContent.WHITE);
-        refIhm.setBoardContent(104, 20, CellContent.WHITE);
-        refIhm.setBoardContent(105, 20, CellContent.WHITE);
-        refIhm.setBoardContent(106, 20, CellContent.WHITE);
-        refIhm.setBoardContent(107, 20, CellContent.WHITE);
-        refIhm.setBoardContent(108, 20, CellContent.WHITE);
-        refIhm.setBoardContent(109, 20, CellContent.WHITE);
-
+        int celluleDepart1 = 100;
+        //ajout du premier pad
+        for (int i = 0; i < 36; i++) {
+            refIhm.setBoardContent(celluleDepart1, 20, CellContent.WHITE);
+            refIhm.setBoardContent(celluleDepart1, 21, CellContent.WHITE);
+            celluleDepart1++;
+        }
+        int celluleDepart2 = 105;
+        for (int i = 0; i < 36; i++) {
+            refIhm.setBoardContent(celluleDepart2, 216, CellContent.WHITE);
+            refIhm.setBoardContent(celluleDepart2, 217, CellContent.WHITE);
+            celluleDepart2++;
+        }
     }
 
     public void actionQuitter() {
