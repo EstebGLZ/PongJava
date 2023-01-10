@@ -35,7 +35,7 @@ public class Ctrl {
         refIhm.clearBoardContent(CellContent.BLUE);
         //ajout de couleur a une cellule
         int celluleDepart1 = 100;
-        //ajout du premier pad
+        //ajout des pads
         for (int i = 0; i < 36; i++) {
             refIhm.setBoardContent(celluleDepart1, 20, CellContent.WHITE);
             refIhm.setBoardContent(celluleDepart1, 21, CellContent.WHITE);
@@ -46,6 +46,9 @@ public class Ctrl {
             refIhm.setBoardContent(celluleDepart2, 216, CellContent.WHITE);
             refIhm.setBoardContent(celluleDepart2, 217, CellContent.WHITE);
             celluleDepart2++;
+        }
+        while(1==1){
+            //si phidget bougé de x cm ajouter 1 sur X
         }
     }
 
