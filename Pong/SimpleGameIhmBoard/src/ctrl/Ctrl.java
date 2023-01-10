@@ -1,8 +1,10 @@
 package ctrl;
+
 import ihm.CellContent;
 import ihm.IhmBoard;
 import wrk.Wrk;
 import EMFPhidgetsBoard.Board;
+
 /**
  * Infrastructure de base et très simple mettant à disposition une ihm graphique
  * fonctionnelle pour implémenter des jeux.
@@ -14,7 +16,8 @@ import EMFPhidgetsBoard.Board;
 public class Ctrl {
 
     public final static int TAILLE_CELLULE_EN_PIXELS = 25;
-final Board board = new EMFPhidgetsBoard.Board();
+    final Board board = new EMFPhidgetsBoard.Board();
+
     public Ctrl() {
         this.refIhm = null;
         this.refWrk = null;
@@ -25,6 +28,7 @@ final Board board = new EMFPhidgetsBoard.Board();
         demo();
     }
 //fdfdgfdsdf
+
     public void demo() {
 
         refIhm.setBoardDimensions(0, 0);
@@ -46,11 +50,20 @@ final Board board = new EMFPhidgetsBoard.Board();
             refIhm.setBoardContent(celluleDepart2, 217, CellContent.WHITE);
             celluleDepart2++;
         }
-        if(board.seConnecter()){
-            System.out.println("Connecter");
-                    while(1==1){
-            //si phidget bougé de x cm ajouter 1 sur X
-        }
+        if (board.seConnecter()) {
+            int dernierValPhid = board.capteur0.getValeur();
+            while (1 == 1) {
+                //si phidget bougé de x cm ajouter 1 sur X
+                System.out.println(board.capteur0.getValeur());
+                //si la dernière valeur est plus grand que la actuel on vas a droite sinon a gauche
+                if (dernierValPhid < board.capteur0.getValeur()) {
+                    System.out.println("gacuhe");
+                }else if (dernierValPhid > board.capteur0.getValeur()) {
+                    System.out.println("droite");
+                }else{
+                    System.out.println("Aucun mouvement");
+                }
+            }
         }
     }
 
