@@ -30,7 +30,7 @@ public class Ctrl {
         refIhm.setBoardDimensions(0, 0);
         refIhm.setTimeTitle("Temps restant");
         refIhm.setBoardDimensions(236, 236, 4);
-        
+        System.out.println("ljasdféjasdélkjfélkasdjfksjdafléjasdélkfjélaskdjflésjaljasdélkjfélaskdfélsjfélasrjfélasdkjflkasdjlkjasd,mdjknkékajsnkjjaskjnijjaiosjdiashcpiuasnfiuWH");
         //couleur de fond
         refIhm.clearBoardContent(CellContent.BLUE);
       
