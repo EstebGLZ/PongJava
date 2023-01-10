@@ -13,7 +13,6 @@ import wrk.Wrk;
  * @version 0.1
  */
 public class Application {
-    dfsdfsdfskdd
 
     /**
      * LA méthode main() de l'application, là où tout commence mais... tout se finit-il bien là ?
