@@ -14,7 +14,7 @@ import wrk.Wrk;
  */
 public class Ctrl {
 
-    public final static int TAILLE_CELLULE_EN_PIXELS = 20;
+    public final static int TAILLE_CELLULE_EN_PIXELS = 25;
 
     public Ctrl() {
         this.refIhm = null;
@@ -25,16 +25,28 @@ public class Ctrl {
         refIhm.ihmStart();
         demo();
     }
-
+//fdfdgfd
     public void demo() {
 
         refIhm.setBoardDimensions(0, 0);
         refIhm.setTimeTitle("Temps restant");
         refIhm.setBoardDimensions(236, 236, 4);
-        
         //couleur de fond
         refIhm.clearBoardContent(CellContent.BLUE);
-      
+        //ajout de couleur a une cellule
+        int celluleDepart1 = 100;
+        //ajout du premier pad
+        for (int i = 0; i < 36; i++) {
+            refIhm.setBoardContent(celluleDepart1, 20, CellContent.WHITE);
+            refIhm.setBoardContent(celluleDepart1, 21, CellContent.WHITE);
+            celluleDepart1++;
+        }
+        int celluleDepart2 = 105;
+        for (int i = 0; i < 36; i++) {
+            refIhm.setBoardContent(celluleDepart2, 216, CellContent.WHITE);
+            refIhm.setBoardContent(celluleDepart2, 217, CellContent.WHITE);
+            celluleDepart2++;
+        }
     }
 
     public void actionQuitter() {
