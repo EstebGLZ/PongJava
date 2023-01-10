@@ -25,15 +25,26 @@ public class Ctrl {
         refIhm.ihmStart();
         demo();
     }
+
     public void demo() {
 
         refIhm.setBoardDimensions(0, 0);
         refIhm.setTimeTitle("Temps restant");
         refIhm.setBoardDimensions(236, 236, 4);
-        System.out.println("ljasdféjasdélkjfélkasdjfksjdafléjasdélkfjélaskdjflésjaljasdélkjfélaskdfélsjfélasrjfélasdkjflkasdjlkjasd,mdjknkékajsnkjjaskjnijjaiosjdiashcpiuasnfiuWH");
         //couleur de fond
         refIhm.clearBoardContent(CellContent.BLUE);
-      
+        //ajout de couleur a une cellule
+        refIhm.setBoardContent(100, 20, CellContent.WHITE);
+        refIhm.setBoardContent(101, 20, CellContent.WHITE);
+        refIhm.setBoardContent(102, 20, CellContent.WHITE);
+        refIhm.setBoardContent(103, 20, CellContent.WHITE);
+        refIhm.setBoardContent(104, 20, CellContent.WHITE);
+        refIhm.setBoardContent(105, 20, CellContent.WHITE);
+        refIhm.setBoardContent(106, 20, CellContent.WHITE);
+        refIhm.setBoardContent(107, 20, CellContent.WHITE);
+        refIhm.setBoardContent(108, 20, CellContent.WHITE);
+        refIhm.setBoardContent(109, 20, CellContent.WHITE);
+
     }
 
     public void actionQuitter() {
