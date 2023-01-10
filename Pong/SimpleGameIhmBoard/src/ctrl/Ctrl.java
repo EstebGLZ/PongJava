@@ -46,8 +46,11 @@ final Board board = new EMFPhidgetsBoard.Board();
             refIhm.setBoardContent(celluleDepart2, 217, CellContent.WHITE);
             celluleDepart2++;
         }
-        while(1==1){
+        if(board.seConnecter()){
+            System.out.println("Connecter");
+                    while(1==1){
             //si phidget bougé de x cm ajouter 1 sur X
+        }
         }
     }
 
