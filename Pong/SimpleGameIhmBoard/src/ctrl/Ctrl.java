@@ -25,7 +25,7 @@ public class Ctrl {
         refIhm.ihmStart();
         demo();
     }
-//fdfdgfd
+//fdfdgfdsdf
     public void demo() {
 
         refIhm.setBoardDimensions(0, 0);
